@@ -1,0 +1,800 @@
+import type { Country } from './types'
+
+export const allCountries: Country[] = [
+{
+ id:"usa",
+ name:"United States",
+ flag:"🇺🇸",
+ stats:{
+   GDP:27700000000000,
+   population:334900000,
+   foodRank:8,
+   landArea:9833520,
+   tourism:51000000,
+   militaryPower:95,
+   lifeExpectancy:77.5,
+   olympicMedals:2940,
+   exports:2000000000000,
+   naturalResources:85,
+   happiness:6.9,
+   techLevel:98
+ }
+},
+
+{
+ id:"china",
+ name:"China",
+ flag:"cn",
+ stats:{
+   GDP:17700000000000,
+   population:1412000000,
+   foodRank:3,
+   landArea:9596961,
+   tourism:40000000,
+   militaryPower:93,
+   lifeExpectancy:78,
+   olympicMedals:713,
+   exports:3400000000000,
+   naturalResources:90,
+   happiness:5.9,
+   techLevel:95
+ }
+},
+
+{
+ id:"india",
+ name:"India",
+ flag:"in",
+ stats:{
+   GDP:3700000000000,
+   population:1428000000,
+   foodRank:5,
+   landArea:3287263,
+   tourism:18000000,
+   militaryPower:86,
+   lifeExpectancy:67.7,
+   olympicMedals:35,
+   exports:770000000000,
+   naturalResources:75,
+   happiness:4.1,
+   techLevel:80
+ }
+},
+
+{
+ id:"japan",
+ name:"Japan",
+ flag:"jp",
+ stats:{
+   GDP:4200000000000,
+   population:124500000,
+   foodRank:1,
+   landArea:377975,
+   tourism:25000000,
+   militaryPower:75,
+   lifeExpectancy:84,
+   olympicMedals:556,
+   exports:700000000000,
+   naturalResources:35,
+   happiness:6.1,
+   techLevel:97
+ }
+},
+
+{
+ id:"germany",
+ name:"Germany",
+ flag:"de",
+ stats:{
+   GDP:4450000000000,
+   population:83200000,
+   foodRank:12,
+   landArea:357022,
+   tourism:39000000,
+   militaryPower:70,
+   lifeExpectancy:81,
+   olympicMedals:1380,
+   exports:1600000000000,
+   naturalResources:45,
+   happiness:6.5,
+   techLevel:96
+ }
+},
+
+{
+ id:"uk",
+ name:"United Kingdom",
+ flag:"gb",
+ stats:{
+   GDP:3340000000000,
+   population:68000000,
+   foodRank:10,
+   landArea:243610,
+   tourism:30000000,
+   militaryPower:82,
+   lifeExpectancy:81,
+   olympicMedals:964,
+   exports:1000000000000,
+   naturalResources:40,
+   happiness:6.8,
+   techLevel:96
+ }
+},
+
+{
+ id:"france",
+ name:"France",
+ flag:"fr",
+ stats:{
+   GDP:3030000000000,
+   population:68000000,
+   foodRank:2,
+   landArea:551695,
+   tourism:100000000,
+   militaryPower:85,
+   lifeExpectancy:82,
+   olympicMedals:900,
+   exports:850000000000,
+   naturalResources:55,
+   happiness:6.7,
+   techLevel:93
+ }
+},
+
+{
+ id:"italy",
+ name:"Italy",
+ flag:"it",
+ stats:{
+   GDP:2250000000000,
+   population:59000000,
+   foodRank:4,
+   landArea:301340,
+   tourism:57000000,
+   militaryPower:70,
+   lifeExpectancy:83,
+   olympicMedals:618,
+   exports:650000000000,
+   naturalResources:35,
+   happiness:6.4,
+   techLevel:88
+ }
+},
+
+{
+ id:"brazil",
+ name:"Brazil",
+ flag:"br",
+ stats:{
+   GDP:2170000000000,
+   population:216000000,
+   foodRank:15,
+   landArea:8515767,
+   tourism:3600000,
+   militaryPower:75,
+   lifeExpectancy:76,
+   olympicMedals:150,
+   exports:340000000000,
+   naturalResources:95,
+   happiness:6.3,
+   techLevel:75
+ }
+},
+
+{
+ id:"canada",
+ name:"Canada",
+ flag:"ca",
+ stats:{
+   GDP:2140000000000,
+   population:40000000,
+   foodRank:18,
+   landArea:9984670,
+   tourism:19000000,
+   militaryPower:65,
+   lifeExpectancy:82,
+   olympicMedals:540,
+   exports:600000000000,
+   naturalResources:98,
+   happiness:7.0,
+   techLevel:90
+ }
+},{
+ id:"australia",
+ name:"Australia",
+ flag:"au",
+ stats:{
+   GDP:1720000000000,
+   population:26400000,
+   foodRank:20,
+   landArea:7692024,
+   tourism:7600000,
+   militaryPower:72,
+   lifeExpectancy:83,
+   olympicMedals:562,
+   exports:470000000000,
+   naturalResources:95,
+   happiness:7.1,
+   techLevel:92
+ }
+},
+
+{
+ id:"south-korea",
+ name:"South Korea",
+ flag:"kr",
+ stats:{
+   GDP:1710000000000,
+   population:51700000,
+   foodRank:7,
+   landArea:100210,
+   tourism:11000000,
+   militaryPower:88,
+   lifeExpectancy:83,
+   olympicMedals:287,
+   exports:680000000000,
+   naturalResources:30,
+   happiness:6.1,
+   techLevel:99
+ }
+},
+
+{
+ id:"spain",
+ name:"Spain",
+ flag:"es",
+ stats:{
+   GDP:1580000000000,
+   population:48000000,
+   foodRank:6,
+   landArea:505990,
+   tourism:84000000,
+   militaryPower:65,
+   lifeExpectancy:83,
+   olympicMedals:174,
+   exports:500000000000,
+   naturalResources:45,
+   happiness:6.4,
+   techLevel:88
+ }
+},
+
+{
+ id:"mexico",
+ name:"Mexico",
+ flag:"mx",
+ stats:{
+   GDP:1790000000000,
+   population:128000000,
+   foodRank:9,
+   landArea:1964375,
+   tourism:42000000,
+   militaryPower:65,
+   lifeExpectancy:75,
+   olympicMedals:73,
+   exports:590000000000,
+   naturalResources:85,
+   happiness:6.3,
+   techLevel:78
+ }
+},
+
+{
+ id:"indonesia",
+ name:"Indonesia",
+ flag:"id",
+ stats:{
+   GDP:1370000000000,
+   population:277000000,
+   foodRank:14,
+   landArea:1904569,
+   tourism:11000000,
+   militaryPower:70,
+   lifeExpectancy:72,
+   olympicMedals:37,
+   exports:290000000000,
+   naturalResources:90,
+   happiness:5.3,
+   techLevel:72
+ }
+},
+
+{
+ id:"turkey",
+ name:"Turkey",
+ flag:"tr",
+ stats:{
+   GDP:1100000000000,
+   population:85000000,
+   foodRank:11,
+   landArea:783562,
+   tourism:51000000,
+   militaryPower:82,
+   lifeExpectancy:78,
+   olympicMedals:104,
+   exports:260000000000,
+   naturalResources:70,
+   happiness:5.2,
+   techLevel:75
+ }
+},
+
+{
+ id:"saudi-arabia",
+ name:"Saudi Arabia",
+ flag:"sa",
+ stats:{
+   GDP:1060000000000,
+   population:36000000,
+   foodRank:25,
+   landArea:2149690,
+   tourism:16000000,
+   militaryPower:78,
+   lifeExpectancy:77,
+   olympicMedals:4,
+   exports:410000000000,
+   naturalResources:100,
+   happiness:6.5,
+   techLevel:80
+ }
+},
+
+{
+ id:"norway",
+ name:"Norway",
+ flag:"no",
+ stats:{
+   GDP:485000000000,
+   population:5500000,
+   foodRank:30,
+   landArea:385207,
+   tourism:5500000,
+   militaryPower:60,
+   lifeExpectancy:83,
+   olympicMedals:405,
+   exports:250000000000,
+   naturalResources:95,
+   happiness:7.3,
+   techLevel:90
+ }
+},
+
+{
+ id:"sweden",
+ name:"Sweden",
+ flag:"se",
+ stats:{
+   GDP:590000000000,
+   population:10500000,
+   foodRank:28,
+   landArea:450295,
+   tourism:7500000,
+   militaryPower:65,
+   lifeExpectancy:83,
+   olympicMedals:503,
+   exports:260000000000,
+   naturalResources:70,
+   happiness:7.2,
+   techLevel:94
+ }
+},
+
+{
+ id:"switzerland",
+ name:"Switzerland",
+ flag:"ch",
+ stats:{
+   GDP:885000000000,
+   population:8900000,
+   foodRank:22,
+   landArea:41285,
+   tourism:11000000,
+   militaryPower:55,
+   lifeExpectancy:84,
+   olympicMedals:181,
+   exports:530000000000,
+   naturalResources:35,
+   happiness:7.1,
+   techLevel:98
+ }
+},
+
+{
+ id:"netherlands",
+ name:"Netherlands",
+ flag:"nl",
+ stats:{
+   GDP:1110000000000,
+   population:17900000,
+   foodRank:18,
+   landArea:41543,
+   tourism:20000000,
+   militaryPower:60,
+   lifeExpectancy:82,
+   olympicMedals:285,
+   exports:950000000000,
+   naturalResources:45,
+   happiness:7.0,
+   techLevel:96
+ }
+},
+
+{
+ id:"argentina",
+ name:"Argentina",
+ flag:"ar",
+ stats:{
+   GDP:640000000000,
+   population:46000000,
+   foodRank:16,
+   landArea:2780400,
+   tourism:7000000,
+   militaryPower:55,
+   lifeExpectancy:76,
+   olympicMedals:77,
+   exports:88000000000,
+   naturalResources:85,
+   happiness:5.9,
+   techLevel:70
+ }
+},
+
+{
+ id:"south-africa",
+ name:"South Africa",
+ flag:"za",
+ stats:{
+   GDP:380000000000,
+   population:62000000,
+   foodRank:24,
+   landArea:1221037,
+   tourism:8500000,
+   militaryPower:60,
+   lifeExpectancy:64,
+   olympicMedals:86,
+   exports:120000000000,
+   naturalResources:95,
+   happiness:5.0,
+   techLevel:70
+ }
+},
+
+{
+ id:"egypt",
+ name:"Egypt",
+ flag:"eg",
+ stats:{
+   GDP:390000000000,
+   population:112000000,
+   foodRank:13,
+   landArea:1002450,
+   tourism:14000000,
+   militaryPower:75,
+   lifeExpectancy:71,
+   olympicMedals:38,
+   exports:43000000000,
+   naturalResources:75,
+   happiness:4.5,
+   techLevel:65
+ }
+},
+
+{
+ id:"nigeria",
+ name:"Nigeria",
+ flag:"ng",
+ stats:{
+   GDP:477000000000,
+   population:223000000,
+   foodRank:17,
+   landArea:923768,
+   tourism:2000000,
+   militaryPower:65,
+   lifeExpectancy:54,
+   olympicMedals:25,
+   exports:70000000000,
+   naturalResources:90,
+   happiness:4.9,
+   techLevel:60
+ }
+},
+
+{
+ id:"thailand",
+ name:"Thailand",
+ flag:"th",
+ stats:{
+   GDP:515000000000,
+   population:71000000,
+   foodRank:10,
+   landArea:513120,
+   tourism:28000000,
+   militaryPower:60,
+   lifeExpectancy:76,
+   olympicMedals:35,
+   exports:285000000000,
+   naturalResources:65,
+   happiness:6.0,
+   techLevel:72
+ }
+},
+
+{
+ id:"vietnam",
+ name:"Vietnam",
+ flag:"vn",
+ stats:{
+   GDP:430000000000,
+   population:100000000,
+   foodRank:12,
+   landArea:331212,
+   tourism:13000000,
+   militaryPower:70,
+   lifeExpectancy:75,
+   olympicMedals:5,
+   exports:370000000000,
+   naturalResources:70,
+   happiness:5.8,
+   techLevel:70
+ }
+},
+{
+ id:"greece",
+ name:"Greece",
+ flag:"gr",
+ stats:{
+   GDP:240000000000,
+   population:10400000,
+   foodRank:17,
+   landArea:131957,
+   tourism:32000000,
+   militaryPower:60,
+   lifeExpectancy:82,
+   olympicMedals:121,
+   exports:50000000000,
+   naturalResources:45,
+   happiness:5.9,
+   techLevel:75
+ }
+},
+
+{
+ id:"portugal",
+ name:"Portugal",
+ flag:"pt",
+ stats:{
+   GDP:290000000000,
+   population:10300000,
+   foodRank:19,
+   landArea:92212,
+   tourism:26000000,
+   militaryPower:55,
+   lifeExpectancy:82,
+   olympicMedals:28,
+   exports:85000000000,
+   naturalResources:40,
+   happiness:6.0,
+   techLevel:78
+ }
+},
+
+{
+ id:"poland",
+ name:"Poland",
+ flag:"pl",
+ stats:{
+   GDP:850000000000,
+   population:38000000,
+   foodRank:21,
+   landArea:312696,
+   tourism:18000000,
+   militaryPower:75,
+   lifeExpectancy:78,
+   olympicMedals:321,
+   exports:400000000000,
+   naturalResources:70,
+   happiness:6.0,
+   techLevel:85
+ }
+},
+
+{
+ id:"new-zealand",
+ name:"New Zealand",
+ flag:"nz",
+ stats:{
+   GDP:250000000000,
+   population:5200000,
+   foodRank:23,
+   landArea:268838,
+   tourism:3200000,
+   militaryPower:45,
+   lifeExpectancy:82,
+   olympicMedals:144,
+   exports:70000000000,
+   naturalResources:65,
+   happiness:7.1,
+   techLevel:88
+ }
+},
+
+{
+ id:"ireland",
+ name:"Ireland",
+ flag:"ie",
+ stats:{
+   GDP:550000000000,
+   population:5300000,
+   foodRank:27,
+   landArea:70273,
+   tourism:11000000,
+   militaryPower:35,
+   lifeExpectancy:82,
+   olympicMedals:37,
+   exports:900000000000,
+   naturalResources:40,
+   happiness:7.0,
+   techLevel:94
+ }
+},
+
+{
+ id:"austria",
+ name:"Austria",
+ flag:"at",
+ stats:{
+   GDP:520000000000,
+   population:9100000,
+   foodRank:26,
+   landArea:83871,
+   tourism:31000000,
+   militaryPower:40,
+   lifeExpectancy:82,
+   olympicMedals:87,
+   exports:220000000000,
+   naturalResources:45,
+   happiness:7.0,
+   techLevel:90
+ }
+},
+
+{
+ id:"denmark",
+ name:"Denmark",
+ flag:"dk",
+ stats:{
+   GDP:410000000000,
+   population:5900000,
+   foodRank:29,
+   landArea:43094,
+   tourism:12000000,
+   militaryPower:55,
+   lifeExpectancy:82,
+   olympicMedals:194,
+   exports:150000000000,
+   naturalResources:50,
+   happiness:7.6,
+   techLevel:95
+ }
+},
+
+{
+ id:"finland",
+ name:"Finland",
+ flag:"fi",
+ stats:{
+   GDP:300000000000,
+   population:5600000,
+   foodRank:31,
+   landArea:338455,
+   tourism:3200000,
+   militaryPower:65,
+   lifeExpectancy:82,
+   olympicMedals:303,
+   exports:90000000000,
+   naturalResources:65,
+   happiness:7.7,
+   techLevel:94
+ }
+},
+
+{
+ id:"singapore",
+ name:"Singapore",
+ flag:"sg",
+ stats:{
+   GDP:500000000000,
+   population:5900000,
+   foodRank:15,
+   landArea:728,
+   tourism:16000000,
+   militaryPower:70,
+   lifeExpectancy:84,
+   olympicMedals:6,
+   exports:475000000000,
+   naturalResources:20,
+   happiness:6.6,
+   techLevel:100
+ }
+},
+
+{
+ id:"uae",
+ name:"United Arab Emirates",
+ flag:"ae",
+ stats:{
+   GDP:510000000000,
+   population:9500000,
+   foodRank:35,
+   landArea:83600,
+   tourism:17000000,
+   militaryPower:70,
+   lifeExpectancy:79,
+   olympicMedals:10,
+   exports:500000000000,
+   naturalResources:95,
+   happiness:6.7,
+   techLevel:90
+ }
+},
+
+{
+ id:"israel",
+ name:"Israel",
+ flag:"il",
+ stats:{
+   GDP:510000000000,
+   population:9800000,
+   foodRank:16,
+   landArea:22072,
+   tourism:3000000,
+   militaryPower:90,
+   lifeExpectancy:83,
+   olympicMedals:13,
+   exports:75000000000,
+   naturalResources:45,
+   happiness:7.0,
+   techLevel:98
+ }
+},
+
+{
+ id:"chile",
+ name:"Chile",
+ flag:"cl",
+ stats:{
+   GDP:335000000000,
+   population:20000000,
+   foodRank:32,
+   landArea:756102,
+   tourism:5500000,
+   militaryPower:55,
+   lifeExpectancy:80,
+   olympicMedals:13,
+   exports:95000000000,
+   naturalResources:90,
+   happiness:6.5,
+   techLevel:75
+ }
+},
+
+{
+ id:"colombia",
+ name:"Colombia",
+ flag:"co",
+ stats:{
+   GDP:345000000000,
+   population:52000000,
+   foodRank:22,
+   landArea:1141748,
+   tourism:6000000,
+   militaryPower:65,
+   lifeExpectancy:77,
+   olympicMedals:34,
+   exports:50000000000,
+   naturalResources:85,
+   happiness:5.8,
+   techLevel:70
+ }
+}
+]
